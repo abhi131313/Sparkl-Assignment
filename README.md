@@ -4,11 +4,13 @@ Overview :
 This project is an interactive learning platform that leverages engaging animations and dynamic UI elements to create an immersive learning experience. The platform is built using React and showcases a series of components that respond to user interactions such as clicks and scrolling to enhance the visual appeal and usability.
 
 Features : 
-Responsive Layout: The platform is fully responsive, ensuring an optimal viewing experience across all devices.
 
 Animated Interactions: Smooth animations guide user interactions, making the UI more engaging and intuitive.
 
 Scroll-Based Animations: Words in paragraphs dynamically transition from dull to bright as the user scrolls down, and revert when scrolling up, offering a visually engaging reading experience.
+
+Responsive Layout: The platform is fully responsive, ensuring an optimal viewing experience across all devices.
+
 
 Click-Based Animations: Elements like teacher and student images reposition and resize based on user clicks, enhancing the interactivity of the platform.
 
