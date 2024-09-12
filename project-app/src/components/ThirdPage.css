@@ -1,0 +1,175 @@
+.third-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.teacher-video {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+.teacher-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+
+}
+
+.second-click .teacher-video {
+  width: 200px;
+  height: auto;
+  top: 20px;
+  right: 20px;
+  position: absolute !important; 
+  transition: all 0.5s ease;
+  z-index: 20;
+}
+
+.students {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+.student-video img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.foods-video {
+  width: 50%; 
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foods-video img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 100vh; 
+  margin-bottom: 100px;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.second-click .teacher-video {
+  width: 200px;
+  height: auto;
+  position: absolute !important; 
+  top: 20px !important; 
+  right: 20px !important;
+  transition: all 0.5s ease;
+}
+
+.video-container .second-click .teacher-video {
+  top: 20px !important;
+  right: 20px !important;
+  width: 200px !important;
+  height: auto !important;
+  z-index: 20;
+}
+
+/* Media queries for different screen sizes */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+  .teacher-video {
+    width: 80%; 
+    height: auto;
+    max-height: 60vh; 
+  }
+
+  .second-click .teacher-video {
+    width: 150px; 
+    top: 10px; 
+    right: 10px;
+  }
+
+  .students {
+    bottom: 10px; 
+  }
+
+  .student-video img {
+    width: 120px; 
+  }
+
+  .foods-video {
+    width: 70%; 
+    height: auto;
+  }
+
+  .foods-video img {
+    max-height: 70vh; 
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .teacher-video {
+    width: 100%;
+    height: auto;
+    max-height: 50vh; 
+  }
+
+  .second-click .teacher-video {
+    width: 120px;
+    top: 5px; 
+    right: 5px;
+  }
+
+  .students {
+    bottom: 5px;
+  }
+
+  .student-video img {
+    width: 100px; 
+  }
+
+  .foods-video {
+    width: 80%; 
+    height: auto;
+  }
+
+  .foods-video img {
+    max-height: 60vh; 
+  }
+}

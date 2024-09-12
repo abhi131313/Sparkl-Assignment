@@ -1,0 +1,256 @@
+
+.first-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #1b0b3f;
+  color: white;
+}
+
+.left-section {
+  flex: 1;
+  padding-right: 5%;
+}
+
+.left-section h1 {
+  margin-bottom: 1rem;
+}
+
+.highlighted {
+  background: linear-gradient(90deg, #ff6f61, #ffa84d);
+  padding: 0.1em 0.4em;
+  border-radius: 0.5em;
+}
+
+.transition-span {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 1em; 
+  line-height: 1; 
+  vertical-align: middle; 
+  width: 38%;
+  padding: 5px 10px;
+  height: 40px;
+}
+
+.left-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.primary-button {
+  background-color: #b67df8;
+  color: white;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.personCoder {
+  height: 90vh;
+  max-width: 500px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.chat-bubbles {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  max-height: 85%;
+  overflow: hidden;
+}
+
+.chat-message {
+  display: flex;
+  align-items: center;
+  background: #222533;
+  padding: 0.5rem 0.8rem; 
+  margin-right: 30px;
+  border-radius: 15px;
+  color: white;
+  max-width: 200px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background: #333347;
+}
+
+.chat-avatar img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-name {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+
+
+.transition-span span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: slideIn 1s ease forwards;
+
+  opacity: 1; 
+}
+.transition-span span.exit {
+  transform: translateY(-100%); 
+  opacity: 0; 
+}
+
+.transition-span span.enter {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+/* Keyframes for sliding the word from bottom to top */
+@keyframes slideIn {
+  0% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+}
+
+/* Keyframe for smooth fade and slide-in */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.chat-message.show {
+  opacity: 1;
+  animation-delay: 0.2s;
+}
+
+/* --- Responsive Design for Mobile Devices --- */
+@media (max-width: 768px) {
+  .first-page {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 20px;
+      height: auto;
+  }
+
+  .left-section {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+
+  .left-section h1 {
+      font-size: 1.8rem;
+  }
+
+  .left-section p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .buttons {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .right-section {
+      align-items: center;
+      justify-content: center;
+  }
+
+  .personCoder {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .chat-bubbles {
+      align-items: center;
+      justify-content: flex-start;
+      max-width: 90%;
+      max-height: 80%; 
+  }
+
+  .chat-message {
+      margin-right: 0;
+      max-width: 100%;
+      padding: 0.4rem 0.6rem;
+      font-size: 0.9rem;
+  }
+
+  .chat-avatar img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .personCoder {
+      height: 60vh;
+      object-fit: cover;
+  }
+}
