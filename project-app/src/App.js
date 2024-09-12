@@ -1,9 +1,8 @@
-// src/App.js
 import React from "react";
 import FirstPage from "./components/FirstPage";
 import SecondPage from "./components/SecondPage";
 import ThirdPage from "./components/ThirdPage";
-import "./App.css"; // For additional global styles
+import "./App.css";
 
 function App() {
   return (
