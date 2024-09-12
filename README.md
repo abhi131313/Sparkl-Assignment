@@ -5,17 +5,22 @@ This project is an interactive learning platform that leverages engaging animati
 
 Features : 
 Responsive Layout: The platform is fully responsive, ensuring an optimal viewing experience across all devices.
+
 Animated Interactions: Smooth animations guide user interactions, making the UI more engaging and intuitive.
+
 Scroll-Based Animations: Words in paragraphs dynamically transition from dull to bright as the user scrolls down, and revert when scrolling up, offering a visually engaging reading experience.
+
 Click-Based Animations: Elements like teacher and student images reposition and resize based on user clicks, enhancing the interactivity of the platform.
 
 Components :
 1. FirstPage Component
 Purpose: Lays out the initial view of the platform with specific section placements and animations.
 Features: Precise alignment, image scaling without distortion, and responsive design to match the expected UI.
+
 2. SecondPage Component
 Purpose: Provides a paragraph text animation effect where words brighten as the user scrolls down and dim when scrolling up.
 Features: Ensures the paragraph starts from the first word and responds accurately to scroll actions, providing a smooth transition effect.
+
 3. ThirdPage Component
 Purpose: Handles dynamic click-based animations for teacher and student images, enhancing the interactive learning experience.
 Features:
