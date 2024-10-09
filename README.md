@@ -1,4 +1,4 @@
-Project Title: Sparkl Edventure Assignment Solution
+Project Title: Multi Project Simulator
 
 Overview : 
 This project is an interactive learning platform that leverages engaging animations and dynamic UI elements to create an immersive learning experience. The platform is built using React and showcases a series of components that respond to user interactions such as clicks and scrolling to enhance the visual appeal and usability.
@@ -69,6 +69,4 @@ License :
 This project is open source and available under the MIT License.
 
 
-Acknowledgments :
-Special thanks to the Spark Edventure team for providing the expected UI screenshots and animation guidelines.
-Thanks to the open-source community for the tools and libraries that made this project possible.
+
